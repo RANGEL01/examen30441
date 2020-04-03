@@ -16,7 +16,6 @@ node dist/
 ---
 ### **NOTAS**
 
-- El servidor de Mongo es local por le tiempo no alcance a configurarlo con el que esta en linea.
 
 - Importante no alcance hacer documentacion asi que las rutas de la aplicación son las siguietes:
 
