@@ -126,7 +126,7 @@ var controller = {
     },
     
     getEquipo: function(req, res) {
-		var equipoId = req.params.equipoId;
+		var equipoId = req.params.id;
 		Equipo.findById(equipoId).exec((error, equipo) => {
 			if (error || !equipo) {
 				return res.status(404).send({
@@ -134,7 +134,6 @@ var controller = {
 					message: 'No existe el equipo'
 				});
 			}
-
 			return res.status(200).send({
 				status: 'success',
 				equipo
